@@ -2,6 +2,15 @@ import { app, BrowserWindow } from 'electron';
 import path from 'path';
 import started from 'electron-squirrel-startup';
 
+import { updateElectronApp, UpdateSourceType  } from 'update-electron-app'
+
+updateElectronApp({
+  updateSource: {
+    type: UpdateSourceType.ElectronPublicUpdateService,
+    repo: 'rhy3h/electron-test'
+  },
+}); // additional configuration options available
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (started) {
   app.quit();

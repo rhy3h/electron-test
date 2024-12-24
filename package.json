@@ -35,6 +35,14 @@
     "name": "rhy3h",
     "email": "rhy3htw@gmail.com"
   },
+  "homepage": "https://github.com/rhy3h/electron-test#readme",
+  "bugs": {
+    "url": "https://github.com/rhy3h/electron-test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhy3h/electron-test.git"
+  },
   "license": "MIT",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"

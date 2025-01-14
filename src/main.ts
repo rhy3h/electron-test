@@ -7,7 +7,8 @@ import { updateElectronApp, UpdateSourceType } from 'update-electron-app'
 updateElectronApp({
   updateSource: {
     type: UpdateSourceType.ElectronPublicUpdateService,
-    repo: 'rhy3h/electron-test'
+    repo: 'rhy3h/electron-test',
+    host: 'https://update.electronjs.org'
   },
 });
 

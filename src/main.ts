@@ -1,16 +1,12 @@
-import { app, BrowserWindow, autoUpdater} from 'electron';
+import { app, BrowserWindow } from 'electron';
 import path from 'path';
 import started from 'electron-squirrel-startup';
 
 import { updateElectronApp, UpdateSourceType } from 'update-electron-app'
 
-autoUpdater.setFeedURL({
-  url: ''
-})
 updateElectronApp({
   updateSource: {
     type: UpdateSourceType.ElectronPublicUpdateService,
-    repo: 'rhy3h/electron-test',
     host: 'https://update.electronjs.org'
   },
 });

@@ -1,9 +1,12 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, autoUpdater} from 'electron';
 import path from 'path';
 import started from 'electron-squirrel-startup';
 
 import { updateElectronApp, UpdateSourceType } from 'update-electron-app'
 
+autoUpdater.setFeedURL({
+  url: ''
+})
 updateElectronApp({
   updateSource: {
     type: UpdateSourceType.ElectronPublicUpdateService,
